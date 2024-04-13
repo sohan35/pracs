@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Love Story</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f8f8f8;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+        }
+
+        header {
+            background-color: #ff69b4;
+            padding: 20px 0;
+            color: #fff;
+        }
+
+        h1 {
+            margin-top: 0;
+        }
+
+        section {
+            display: none;
+            padding: 50px 0;
+        }
+
+        p {
+            color: #333;
+            font-size: 18px;
+        }
+
+        footer {
+            background-color: #333;
+            color: #fff;
+            padding: 20px 0;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Your Love Story</h1>
+    </header>
+    <button id="showLoveLetter">Show Love Letter</button>
+    <button id="showImage">Show Image</button>
+    <section id="loveLetter">
+        <h2> moga mazya,</h2>
+        <p>Chalo i thought of creating some thing for youu in what i learn</p>
+        <p>idk what to write bt ik hei povn tuka khoob bare distale ki idk.</p>
+        <p>so maje project b karun vaz yelo mka so i thought of doing something for you</p>
+        <p>i hope youuu like thiissss.</p>
+        <p>your love</p>
+    </section>
+    <section id="imageSection">
+        <img id="loveImage" src="" alt="Love Image">
+    </section>
+    <footer>
+        <p>This website was created with love by [Your Name].</p>
+    </footer>
+
+    <script>
+        document.getElementById('showLoveLetter').addEventListener('click', function() {
+            document.getElementById('loveLetter').style.display = 'block';
+            document.getElementById('imageSection').style.display = 'none';
+        });
+
+        document.getElementById('showImage').addEventListener('click', function() {
+            document.getElementById('imageSection').style.display = 'block';
+            document.getElementById('loveLetter').style.display = 'none';
+            // Replace the src attribute with the URL of your image
+            document.getElementById('loveImage').src = 'p1.jpg';
+        });
+    </script>
+</body>
+</html>
